@@ -1,0 +1,13 @@
+In this folder I only upload one Makefile
+
+If you want to make more different Makefile, please follow these steps
+
+1.copy this content:
+
+ -static-libgcc -static-libstdc++ -Wl,-Bstatic -lstdc++ -lpthread
+
+2.paste it at the end of this line
+
+	$(LINK) $(LINKFLAGS) $(EXTRA_PATH) $(OBJ) $(EXTRA_LIB) $(LIB) -o $(EXE)
+
+3.save
